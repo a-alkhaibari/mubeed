@@ -58,7 +58,7 @@
 
     <!-- ==================== HEADER ==================== -->
     <header id="header" class="fixed top-0 right-0 left-0 z-50 bg-surface/80 backdrop-blur-2xl border-b border-white/[0.06] transition-all duration-300">
-        <div class="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-[72px]">
+        <div class="flex items-center justify-between w-full max-w-[1200px] mx-auto py-4 px-8">
             <a href="/" class="flex items-center gap-2.5 no-underline">
                 <svg class="w-9 h-9" viewBox="0 0 42 42" fill="none">
                     <circle cx="21" cy="21" r="17" fill="#10B981" opacity="0.1"/>
@@ -94,7 +94,7 @@
     <!-- ==================== HERO ==================== -->
     <section class="relative pt-40 pb-32 md:pt-52 md:pb-44 lg:pb-48 overflow-hidden">
         <!-- Cinematic aurora -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-green-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[800px] bg-green-500/[0.06] blur-[250px] rounded-full pointer-events-none opacity-[0.15]"></div>
         <div class="absolute bottom-0 left-1/3 w-[500px] h-[500px] rounded-full bg-white/[0.02] blur-[100px] pointer-events-none"></div>
 
         <div class="relative z-10 text-center max-w-[800px] mx-auto px-6">
@@ -146,57 +146,69 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
-                <article class="flex flex-col items-start text-right p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
-                    <img src="assets/icon-general.webp" alt="رش مبيدات شامل" class="w-24 h-24 object-contain mb-6">
-                    <h3 class="text-xl font-extrabold text-white mb-3">رش مبيدات شامل</h3>
-                    <p class="text-muted text-[0.95rem] leading-relaxed mb-5">رش مبيدات احترافي للمنزل بالكامل — مطبخ وحمامات وغرف وحديقة. مبيدات معتمدة من هيئة الغذاء والدواء. رش ضبابي ورش بالبخار. نوفر مبيدات عضوية آمنة للأطفال والحيوانات.</p>
-                    <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">شقة من ٢٠٠ ريال / فيلا من ٥٠٠ ريال</span>
-                    <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B1%D8%B4%20%D9%85%D8%A8%D9%8A%D8%AF%D8%A7%D8%AA%20%D9%84%D9%84%D9%85%D9%86%D8%B2%D9%84" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-auto">اطلب رش مبيدات &larr;</a>
+                <article class="flex flex-row items-center justify-between gap-6 p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
+                    <div class="flex-1 text-right">
+                        <h3 class="text-xl font-extrabold text-white mb-3">رش مبيدات شامل</h3>
+                        <p class="text-muted text-[0.95rem] leading-relaxed mb-5">رش مبيدات احترافي للمنزل بالكامل — مطبخ وحمامات وغرف وحديقة. مبيدات معتمدة من هيئة الغذاء والدواء. رش ضبابي ورش بالبخار. نوفر مبيدات عضوية آمنة للأطفال والحيوانات.</p>
+                        <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">شقة من ٢٠٠ ريال / فيلا من ٥٠٠ ريال</span>
+                        <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B1%D8%B4%20%D9%85%D8%A8%D9%8A%D8%AF%D8%A7%D8%AA%20%D9%84%D9%84%D9%85%D9%86%D8%B2%D9%84" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-4">اطلب رش مبيدات &larr;</a>
+                    </div>
+                    <img src="assets/icon-general.webp" alt="رش مبيدات شامل" class="w-28 h-28 flex-shrink-0 object-contain">
                 </article>
 
                 <!-- Card 2 -->
-                <article class="flex flex-col items-start text-right p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
-                    <img src="assets/icon-roaches-ants.webp" alt="مكافحة صراصير ونمل" class="w-24 h-24 object-contain mb-6">
-                    <h3 class="text-xl font-extrabold text-white mb-3">مكافحة صراصير ونمل</h3>
-                    <p class="text-muted text-[0.95rem] leading-relaxed mb-5">القضاء على الصراصير والنمل نهائياً. جل متخصص للصراصير يقضي على المستعمرة بالكامل. معالجة من المصدر مع ضمان.</p>
-                    <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٢٠٠ ريال</span>
-                    <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%B5%D8%B1%D8%A7%D8%B5%D9%8A%D8%B1" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-auto">اطلب مكافحة صراصير &larr;</a>
+                <article class="flex flex-row items-center justify-between gap-6 p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
+                    <div class="flex-1 text-right">
+                        <h3 class="text-xl font-extrabold text-white mb-3">مكافحة صراصير ونمل</h3>
+                        <p class="text-muted text-[0.95rem] leading-relaxed mb-5">القضاء على الصراصير والنمل نهائياً. جل متخصص للصراصير يقضي على المستعمرة بالكامل. معالجة من المصدر مع ضمان.</p>
+                        <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٢٠٠ ريال</span>
+                        <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%B5%D8%B1%D8%A7%D8%B5%D9%8A%D8%B1" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-4">اطلب مكافحة صراصير &larr;</a>
+                    </div>
+                    <img src="assets/icon-roaches-ants.webp" alt="مكافحة صراصير ونمل" class="w-28 h-28 flex-shrink-0 object-contain">
                 </article>
 
                 <!-- Card 3 -->
-                <article class="flex flex-col items-start text-right p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
-                    <img src="assets/icon-bed-bugs.webp" alt="مكافحة بق الفراش" class="w-24 h-24 object-contain mb-6">
-                    <h3 class="text-xl font-extrabold text-white mb-3">مكافحة بق الفراش</h3>
-                    <p class="text-muted text-[0.95rem] leading-relaxed mb-5">معالجة متخصصة لبق الفراش — أصعب حشرة. رش متخصص + معالجة حرارية. ٢-٣ جلسات للقضاء الكامل. ضمان على العلاج.</p>
-                    <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٣٠٠ ريال</span>
-                    <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A8%D9%82%20%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D8%B4" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-auto">اطلب مكافحة بق &larr;</a>
+                <article class="flex flex-row items-center justify-between gap-6 p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
+                    <div class="flex-1 text-right">
+                        <h3 class="text-xl font-extrabold text-white mb-3">مكافحة بق الفراش</h3>
+                        <p class="text-muted text-[0.95rem] leading-relaxed mb-5">معالجة متخصصة لبق الفراش — أصعب حشرة. رش متخصص + معالجة حرارية. ٢-٣ جلسات للقضاء الكامل. ضمان على العلاج.</p>
+                        <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٣٠٠ ريال</span>
+                        <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A8%D9%82%20%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D8%B4" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-4">اطلب مكافحة بق &larr;</a>
+                    </div>
+                    <img src="assets/icon-bed-bugs.webp" alt="مكافحة بق الفراش" class="w-28 h-28 flex-shrink-0 object-contain">
                 </article>
 
                 <!-- Card 4 -->
-                <article class="flex flex-col items-start text-right p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
-                    <img src="assets/icon-rodents.webp" alt="مكافحة فئران وقوارض" class="w-24 h-24 object-contain mb-6">
-                    <h3 class="text-xl font-extrabold text-white mb-3">مكافحة فئران وقوارض</h3>
-                    <p class="text-muted text-[0.95rem] leading-relaxed mb-5">القضاء على الفئران والقوارض باستخدام طعوم سامة ومصايد احترافية وسد منافذ الدخول. خدمة شاملة تمنع عودة الفئران. مناسب للمنازل والمستودعات والمطاعم.</p>
-                    <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٣٠٠ ريال</span>
-                    <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D9%81%D8%A6%D8%B1%D8%A7%D9%86" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-auto">اطلب مكافحة فئران &larr;</a>
+                <article class="flex flex-row items-center justify-between gap-6 p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
+                    <div class="flex-1 text-right">
+                        <h3 class="text-xl font-extrabold text-white mb-3">مكافحة فئران وقوارض</h3>
+                        <p class="text-muted text-[0.95rem] leading-relaxed mb-5">القضاء على الفئران والقوارض باستخدام طعوم سامة ومصايد احترافية وسد منافذ الدخول. خدمة شاملة تمنع عودة الفئران. مناسب للمنازل والمستودعات والمطاعم.</p>
+                        <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٣٠٠ ريال</span>
+                        <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D9%81%D8%A6%D8%B1%D8%A7%D9%86" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-4">اطلب مكافحة فئران &larr;</a>
+                    </div>
+                    <img src="assets/icon-rodents.webp" alt="مكافحة فئران وقوارض" class="w-28 h-28 flex-shrink-0 object-contain">
                 </article>
 
                 <!-- Card 5 -->
-                <article class="flex flex-col items-start text-right p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
-                    <img src="assets/icon-pigeons.webp" alt="تركيب طارد وشبك حمام" class="w-24 h-24 object-contain mb-6">
-                    <h3 class="text-xl font-extrabold text-white mb-3">تركيب طارد وشبك حمام</h3>
-                    <p class="text-muted text-[0.95rem] leading-relaxed mb-5">تركيب جميع أنواع طوارد الحمام: شوك ستانلس ستيل، أسلاك، شبك شفاف. حماية البلكونات والنوافذ والأسطح.</p>
-                    <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">من ٣٠ ريال/متر</span>
-                    <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%B7%D8%A7%D8%B1%D8%AF%20%D8%AD%D9%85%D8%A7%D9%85" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-auto">اطلب تركيب طارد &larr;</a>
+                <article class="flex flex-row items-center justify-between gap-6 p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
+                    <div class="flex-1 text-right">
+                        <h3 class="text-xl font-extrabold text-white mb-3">تركيب طارد وشبك حمام</h3>
+                        <p class="text-muted text-[0.95rem] leading-relaxed mb-5">تركيب جميع أنواع طوارد الحمام: شوك ستانلس ستيل، أسلاك، شبك شفاف. حماية البلكونات والنوافذ والأسطح.</p>
+                        <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">من ٣٠ ريال/متر</span>
+                        <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%B7%D8%A7%D8%B1%D8%AF%20%D8%AD%D9%85%D8%A7%D9%85" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-4">اطلب تركيب طارد &larr;</a>
+                    </div>
+                    <img src="assets/icon-pigeons.webp" alt="تركيب طارد وشبك حمام" class="w-28 h-28 flex-shrink-0 object-contain">
                 </article>
 
                 <!-- Card 6 -->
-                <article class="flex flex-col items-start text-right p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
-                    <img src="assets/icon-termites.webp" alt="رش نمل أبيض ومعالجة أرضة" class="w-24 h-24 object-contain mb-6">
-                    <h3 class="text-xl font-extrabold text-white mb-3">رش نمل أبيض ومعالجة أرضة</h3>
-                    <p class="text-muted text-[0.95rem] leading-relaxed mb-5">رش ما قبل البناء لحماية الأساسات من النمل الأبيض (الأرضة/الرمة). معالجة المباني المصابة. أخطر حشرة على المباني — تأكل الخشب والجبس من الداخل.</p>
-                    <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٥٠٠ ريال</span>
-                    <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B1%D8%B4%20%D9%86%D9%85%D9%84%20%D8%A3%D8%A8%D9%8A%D8%B6%20%D8%A3%D9%88%20%D8%A3%D8%B1%D8%B6%D8%A9" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-auto">اطلب رش نمل أبيض &larr;</a>
+                <article class="flex flex-row items-center justify-between gap-6 p-8 bg-white/[0.05] backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-green-400/30 hover:shadow-[0_20px_40px_rgba(16,185,129,0.1)] group">
+                    <div class="flex-1 text-right">
+                        <h3 class="text-xl font-extrabold text-white mb-3">رش نمل أبيض ومعالجة أرضة</h3>
+                        <p class="text-muted text-[0.95rem] leading-relaxed mb-5">رش ما قبل البناء لحماية الأساسات من النمل الأبيض (الأرضة/الرمة). معالجة المباني المصابة. أخطر حشرة على المباني — تأكل الخشب والجبس من الداخل.</p>
+                        <span class="text-sm text-accent font-bold bg-accent/10 px-4 py-2 rounded-full mb-4">تبدأ من ٥٠٠ ريال</span>
+                        <a href="https://wa.me/966555435986?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B1%D8%B4%20%D9%86%D9%85%D9%84%20%D8%A3%D8%A8%D9%8A%D8%B6%20%D8%A3%D9%88%20%D8%A3%D8%B1%D8%B6%D8%A9" target="_blank" class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] no-underline hover:gap-3 transition-all mt-4">اطلب رش نمل أبيض &larr;</a>
+                    </div>
+                    <img src="assets/icon-termites.webp" alt="رش نمل أبيض ومعالجة أرضة" class="w-28 h-28 flex-shrink-0 object-contain">
                 </article>
             </div>
         </div>
@@ -221,27 +233,27 @@
                 </div>
 
                 <!-- Node 1 -->
-                <div class="timeline-node relative flex items-start gap-6 md:gap-10 mb-16 pr-14 md:pr-20">
-                    <div class="absolute right-0 md:right-2 top-1 w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center justify-center text-surface font-black text-xl z-10 transition-all duration-500">١</div>
-                    <div class="bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-6 md:p-8 flex-1">
+                <div class="timeline-node flex items-start gap-6 relative mb-16">
+                    <div class="w-14 h-14 rounded-full bg-green-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center justify-center text-surface font-black text-xl flex-shrink-0 z-10 transition-all duration-500">١</div>
+                    <div class="flex-1 text-right pt-1">
                         <h3 class="text-lg font-extrabold text-white mb-2">وصّف المشكلة</h3>
                         <p class="text-muted text-[0.93rem] leading-relaxed">تواصل عبر الواتساب وأخبرنا بنوع الحشرات ومكان المشكلة. صورة تساعد في التشخيص الأسرع. نرد خلال دقائق.</p>
                     </div>
                 </div>
 
                 <!-- Node 2 -->
-                <div class="timeline-node relative flex items-start gap-6 md:gap-10 mb-16 pr-14 md:pr-20">
-                    <div class="absolute right-0 md:right-2 top-1 w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center justify-center text-surface font-black text-xl z-10 transition-all duration-500">٢</div>
-                    <div class="bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-6 md:p-8 flex-1">
+                <div class="timeline-node flex items-start gap-6 relative mb-16">
+                    <div class="w-14 h-14 rounded-full bg-green-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center justify-center text-surface font-black text-xl flex-shrink-0 z-10 transition-all duration-500">٢</div>
+                    <div class="flex-1 text-right pt-1">
                         <h3 class="text-lg font-extrabold text-white mb-2">نحدد الخطة والسعر</h3>
                         <p class="text-muted text-[0.93rem] leading-relaxed">نعطيك تسعيرة واضحة وخطة العلاج — عدد الجلسات، نوع المبيد، ومدة الضمان. بدون تكاليف مخفية.</p>
                     </div>
                 </div>
 
                 <!-- Node 3 -->
-                <div class="timeline-node relative flex items-start gap-6 md:gap-10 pr-14 md:pr-20">
-                    <div class="absolute right-0 md:right-2 top-1 w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center justify-center text-surface font-black text-xl z-10 transition-all duration-500">٣</div>
-                    <div class="bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-6 md:p-8 flex-1">
+                <div class="timeline-node flex items-start gap-6 relative">
+                    <div class="w-14 h-14 rounded-full bg-green-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] flex items-center justify-center text-surface font-black text-xl flex-shrink-0 z-10 transition-all duration-500">٣</div>
+                    <div class="flex-1 text-right pt-1">
                         <h3 class="text-lg font-extrabold text-white mb-2">الفني يعالج المشكلة</h3>
                         <p class="text-muted text-[0.93rem] leading-relaxed">يصل فني مكافحة الحشرات المعتمد بمعداته وينفذ العلاج. تدفع بعد الانتهاء مع شهادة وضمان ٣-٦ أشهر.</p>
                     </div>
@@ -253,7 +265,7 @@
     <!-- ==================== PRICING — TIER CARDS ==================== -->
     <section id="pricing" class="relative py-32 lg:py-40">
         <!-- Cinematic aurora -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-green-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[800px] bg-green-500/[0.06] blur-[250px] rounded-full pointer-events-none opacity-[0.15]"></div>
 
         <div class="relative z-10 max-w-[1000px] mx-auto px-6">
             <div class="text-center mb-16">
