@@ -1,0 +1,11 @@
+{
+  "name": "مبيد",
+  "short_name": "مبيد",
+  "description": "مكافحة حشرات ورش مبيدات في السعودية",
+  "start_url": "/",
+  "display": "standalone",
+  "dir": "rtl",
+  "lang": "ar",
+  "background_color": "#0F1112",
+  "theme_color": "#10B981"
+}
