@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(npx serve:*)",
+      "Bash(python:*)",
+      "Bash(du -sh /c/vibe/mubeed/*)",
+      "Bash(find /c/vibe/mubeed -maxdepth 2 -type f ! -path \"*/.git/*\" -exec ls -lh {} \\\\;)",
+      "Bash(awk '{print $5, $NF}')",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8082/)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(git commit:*)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill:*)"
+    ]
+  }
+}
