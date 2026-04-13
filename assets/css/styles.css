@@ -1709,7 +1709,7 @@ a.city-chip {
   font-size: var(--fs-md);
   color: var(--color-text-secondary);
   max-width: 620px;
-  margin: 0 auto var(--space-xl);
+  margin: 0 auto var(--space-lg);
   line-height: 1.9;
   font-weight: 500;
   position: relative;
@@ -1788,7 +1788,7 @@ a.city-chip {
 }
 
 .dark-table-cell {
-  padding: var(--space-lg) var(--space-lg);
+  padding: 1.125rem var(--space-lg);
   font-size: var(--fs-sm);
   color: var(--color-text-secondary);
   line-height: 1.6;
@@ -1858,18 +1858,19 @@ a.city-chip {
 .article-final-cta-desc {
   font-size: var(--fs-md);
   color: var(--color-text-secondary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
   line-height: 1.9;
-  max-width: 520px;
+  max-width: 540px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 .article-final-cta-reassurance {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-sm);
   color: var(--color-text-muted);
   margin-bottom: var(--space-xl);
   position: relative;
+  font-weight: 500;
 }
 .article-final-cta-buttons {
   display: flex;
@@ -1959,7 +1960,7 @@ a.city-chip {
 
 /* Table of contents */
 .article-toc {
-  background: var(--color-surface);
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-right: 3px solid var(--color-accent);
   border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
@@ -2171,6 +2172,11 @@ a.city-chip {
 }
 .article-faq .faq-trigger {
   font-weight: 800;
+}
+.article-faq .faq-answer-inner {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+  line-height: 2;
 }
 
 /* Inner page mobile overrides */
