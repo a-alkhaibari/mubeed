@@ -187,4 +187,24 @@
     phoneNumber: CONFIG.phoneNumber,
   };
 
+  /* ----- FIX: iOS Safari dynamic toolbar shifts fixed bottom bar ----- */
+  const ctaBar = document.querySelector('.mobile-cta-bar');
+  if (ctaBar && window.visualViewport) {
+    let rafId = 0;
+    function pinCTABar() {
+      rafId = 0;
+      const vv = window.visualViewport;
+      // Position bar at the bottom of the visual viewport (what the user actually sees)
+      // instead of relying on CSS bottom:0 which tracks the layout viewport
+      ctaBar.style.top = (vv.offsetTop + vv.height - ctaBar.offsetHeight) + 'px';
+      ctaBar.style.bottom = 'auto';
+    }
+    function schedulePinCTA() {
+      if (!rafId) rafId = requestAnimationFrame(pinCTABar);
+    }
+    window.visualViewport.addEventListener('resize', schedulePinCTA);
+    window.visualViewport.addEventListener('scroll', schedulePinCTA);
+    pinCTABar();
+  }
+
 })();
