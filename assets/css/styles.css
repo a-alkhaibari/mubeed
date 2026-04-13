@@ -1868,6 +1868,15 @@ select:focus-visible {
   font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--color-accent);
+  transition: var(--transition);
+  cursor: default;
+}
+.article-meta-chip:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--color-accent-glow);
 }
 
 /* Table of contents */
