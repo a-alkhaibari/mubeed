@@ -1758,9 +1758,6 @@ select:focus-visible {
   .trust-strip {
     padding: var(--space-xl) 0;
   }
-  .trust-strip .container {
-    padding: 0;
-  }
   .trust-strip-grid {
     display: flex;
     overflow-x: auto;
@@ -1772,12 +1769,6 @@ select:focus-visible {
   }
   .trust-strip-grid::-webkit-scrollbar {
     display: none;
-  }
-  .trust-item:first-child {
-    margin-inline-start: var(--space-md);
-  }
-  .trust-item:last-child {
-    margin-inline-end: var(--space-md);
   }
   .trust-item {
     flex: 0 0 auto;
@@ -1933,9 +1924,6 @@ select:focus-visible {
   }
 
   /* --- Blog / Articles — horizontal scroll on mobile --- */
-  #blog .container {
-    padding: 0;
-  }
   .blog-grid {
     display: flex;
     overflow-x: auto;
@@ -1948,12 +1936,6 @@ select:focus-visible {
   }
   .blog-grid::-webkit-scrollbar {
     display: none;
-  }
-  .blog-card:first-child {
-    margin-inline-start: var(--space-md);
-  }
-  .blog-card:last-child {
-    margin-inline-end: var(--space-md);
   }
   .blog-card {
     flex: 0 0 80vw;
