@@ -1893,7 +1893,9 @@ select:focus-visible {
   }
   .article-final-cta-buttons .btn {
     width: 100%;
-    min-height: 52px;
+    min-height: 56px;
+    padding: 1rem var(--space-lg);
+    font-size: var(--fs-sm);
   }
 }
 
