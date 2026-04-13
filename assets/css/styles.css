@@ -1718,7 +1718,7 @@ select:focus-visible {
 
 /* Article body */
 .article-content {
-  max-width: 800px;
+  max-width: 820px;
   margin: 0 auto;
   padding: var(--space-3xl) var(--space-lg);
 }
@@ -1883,15 +1883,16 @@ select:focus-visible {
 .article-toc {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  border-right: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
   padding: var(--space-xl);
   margin-bottom: var(--space-2xl);
 }
 .article-toc-title {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: 800;
-  color: var(--color-text);
-  margin-bottom: var(--space-md);
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
 }
 .article-toc-list {
   display: flex;
@@ -1991,23 +1992,25 @@ select:focus-visible {
 
 /* Price column emphasis in tables */
 .dark-table-cell--price {
-  font-weight: 700;
-  color: var(--color-text);
+  font-weight: 800;
+  color: var(--color-accent);
+  font-size: var(--fs-base);
 }
 
 /* Article note callout */
 .article-note {
   background: var(--color-surface);
   border-right: 3px solid var(--color-accent);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  padding: var(--space-lg);
-  margin: var(--space-lg) 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-xl) 0;
   font-size: var(--fs-sm);
   color: var(--color-text-secondary);
   line-height: 1.9;
 }
 .article-note strong {
   color: var(--color-accent);
+  font-weight: 800;
 }
 
 /* Scannable list for explanatory sections */
@@ -2030,8 +2033,9 @@ select:focus-visible {
 .article-list-item strong {
   display: block;
   color: var(--color-text);
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 0.25rem;
+  font-size: var(--fs-base);
 }
 
 /* Comparison card (e.g. type A vs type B) */
@@ -2044,12 +2048,14 @@ select:focus-visible {
 .article-compare-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   transition: var(--transition);
 }
 .article-compare-card:hover {
   border-color: var(--color-border-accent);
+  border-top-color: var(--color-accent);
 }
 .article-compare-card h4 {
   font-size: var(--fs-base);
@@ -2083,7 +2089,10 @@ select:focus-visible {
   margin-top: var(--space-xl);
 }
 .article-faq .faq-item {
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0.75rem;
+}
+.article-faq .faq-trigger {
+  font-weight: 800;
 }
 
 /* Inner page mobile overrides */
