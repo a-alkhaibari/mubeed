@@ -1769,12 +1769,16 @@ select:focus-visible {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     gap: var(--space-sm);
-    padding: 0 var(--space-md);
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
   .trust-strip-grid::-webkit-scrollbar {
     display: none;
+  }
+  .trust-strip-grid::before,
+  .trust-strip-grid::after {
+    content: '';
+    flex: 0 0 calc(var(--space-md) - var(--space-sm));
   }
   .trust-item {
     flex: 0 0 auto;
@@ -1940,15 +1944,18 @@ select:focus-visible {
     scroll-snap-type: x mandatory;
     gap: var(--space-md);
     padding-bottom: var(--space-sm);
-    padding-left: var(--space-md);
     margin-left: calc(-1 * var(--space-md));
     margin-right: calc(-1 * var(--space-md));
-    padding-right: var(--space-md);
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
   .blog-grid::-webkit-scrollbar {
     display: none;
+  }
+  .blog-grid::before,
+  .blog-grid::after {
+    content: '';
+    flex: 0 0 1px;
   }
   .blog-card {
     flex: 0 0 80vw;
