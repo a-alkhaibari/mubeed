@@ -2010,9 +2010,40 @@ select:focus-visible {
   color: var(--color-accent);
 }
 
+/* Scannable list for explanatory sections */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.article-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+.article-list-item:last-child {
+  border-bottom: none;
+}
+.article-list-item strong {
+  color: var(--color-text);
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Alternating table rows for better scanning */
+.dark-table-row:not(.t-header):nth-child(even) {
+  background: var(--color-surface-alt);
+}
+
 /* Article FAQ (reuses homepage FAQ concept) */
 .article-faq {
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-xl);
 }
 .article-faq .faq-item {
   margin-bottom: var(--space-sm);
@@ -2055,11 +2086,17 @@ select:focus-visible {
     font-weight: 700;
   }
 
-  /* --- Section headings: distinct from body, clear dividers --- */
+  /* --- Section headings: distinct from body, accent marker --- */
   .article-content h2 {
     font-size: var(--fs-lg);
     margin: var(--space-2xl) 0 var(--space-md);
     padding-top: var(--space-lg);
+    padding-right: var(--space-md);
+    border-right: 3px solid var(--color-accent);
+  }
+  .article-content h2:first-child {
+    border-right: none;
+    padding-right: 0;
   }
 
   /* --- Summary card: comfortable spacing --- */
@@ -2098,21 +2135,36 @@ select:focus-visible {
 
   /* --- Tables: readable cells, distinct header, price emphasis --- */
   .dark-table {
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0 var(--space-lg);
     border-radius: var(--radius-md);
   }
   .dark-table-row.t-header .dark-table-cell {
-    padding: 0.75rem 0.625rem;
+    padding: 0.75rem 0.5rem;
     font-size: 0.8125rem;
     font-weight: 800;
+    letter-spacing: 0.01em;
   }
   .dark-table-cell {
-    padding: 0.875rem 0.625rem;
-    font-size: 0.875rem;
+    padding: 0.8125rem 0.5rem;
+    font-size: 0.8125rem;
     line-height: 1.5;
   }
   .dark-table-cell--price {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  /* --- Scannable lists on mobile --- */
+  .article-list-item {
+    gap: var(--space-sm);
+    padding: 0.75rem 0;
     font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+  .article-list-item strong {
+    white-space: normal;
+    min-width: 0;
   }
 
   /* --- Article notes: compact callouts --- */
