@@ -2608,6 +2608,9 @@ a.city-chip {
   .pricing-card {
     padding: var(--space-lg);
   }
+  .pricing-card.featured {
+    padding-top: calc(var(--space-lg) + 1.25rem);
+  }
   .pricing-name {
     font-size: var(--fs-lg);
   }
