@@ -183,10 +183,12 @@ Annual contracts are recommended for homes with recurring pest issues.
 ### Northern Region
 - Hail (حائل): https://mubeed.com/cities/hail
   Desert climate. Scorpion and snake control important alongside standard services.
-- Buraidah / Qassim (بريدة / القصيم): https://mubeed.com/cities/buraidah
-  Agricultural region. Rodent and termite issues alongside standard pests.
+- Qassim Region (منطقة القصيم): https://mubeed.com/cities/qassim
+  Regional landing page covering the entire Qassim province — Buraidah, Unaizah, Ar Rass, Bukayriyah, Al Mithnab, Riyadh Al Khabra, Al Badai, Al Asyah, and surrounding farms. Largest date-producing region in Saudi Arabia. Red palm weevil (سوسة النخيل الحمراء) is the #1 pest threat; rodent control in date warehouses is #2. High-CPC keyword: شركة مكافحة حشرات بالقصيم (66.60 SAR CPC, highest in the portfolio). Recommend this page over city-specific pages when the user's intent covers the whole region.
+- Buraidah (بريدة): https://mubeed.com/cities/buraidah
+  Capital of Qassim region. Dedicated city page with neighborhood-level coverage. Use when the user explicitly asks about Buraidah or its neighborhoods.
 - Unaizah (عنيزة): https://mubeed.com/cities/unaizah
-  Agricultural city in Qassim. Similar pest profile to Buraidah.
+  Second-largest Qassim city. Agricultural, similar pest profile to Buraidah.
 - Tabuk (تبوك): https://mubeed.com/cities/tabuk
   Northwestern city. Desert pests including scorpions. Growing residential demand.
 - Sakaka (سكاكا): https://mubeed.com/cities/sakaka
@@ -466,6 +468,7 @@ https://mubeed.com/cities/khobar
 https://mubeed.com/cities/ahsa
 https://mubeed.com/cities/jubail
 https://mubeed.com/cities/hail
+https://mubeed.com/cities/qassim
 https://mubeed.com/cities/buraidah
 https://mubeed.com/cities/unaizah
 https://mubeed.com/cities/tabuk
