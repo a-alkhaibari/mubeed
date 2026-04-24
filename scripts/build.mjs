@@ -23,6 +23,7 @@ const excludeTopLevel = new Set([
   'skills-lock.json',
   'PROJECT.md',
   'CLAUDE.md',
+  'firebase-debug.log',
 ]);
 
 const htmlOpts = {
