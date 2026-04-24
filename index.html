@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar-SA" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -8,6 +8,11 @@
   <title>مبيد — مكافحة حشرات ورش مبيدات في جميع مدن المملكة</title>
   <meta name="description" content="مبيد - شركة مكافحة حشرات ورش مبيدات معتمدة في السعودية. فنيون محترفون، مواد آمنة، تغطية واسعة. احجز الآن عبر واتساب أو الاتصال المباشر.">
   <link rel="canonical" href="https://mubeed.com/">
+  <link rel="alternate" hreflang="ar-SA" href="https://mubeed.com/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#DC2626">
+  <link rel="alternate" type="text/plain" href="https://mubeed.com/llms.txt" title="LLM Context">
+  <link rel="alternate" type="text/plain" href="https://mubeed.com/llms-full.txt" title="LLM Full Context">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -17,6 +22,9 @@
   <meta property="og:locale" content="ar_SA">
   <meta property="og:site_name" content="مبيد">
   <meta property="og:image" content="https://mubeed.com/assets/images/og-mubeed.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="مبيد — مكافحة حشرات ورش مبيدات في السعودية">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -46,43 +54,103 @@
     gtag('config', 'G-FKGZLWWVJP');
   </script>
 
-  <!-- Schema.org: PestControlService -->
+  <!-- Schema.org: Full @graph — PestControlBusiness + WebSite + WebPage + BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "PestControlService",
-    "name": "مبيد",
-    "alternateName": "Mubeed",
-    "url": "https://mubeed.com",
-    "logo": "https://mubeed.com/assets/images/og-mubeed.png",
-    "image": "https://mubeed.com/assets/images/og-mubeed.png",
-    "description": "شركة مكافحة حشرات ورش مبيدات معتمدة في المملكة العربية السعودية. فنيون محترفون، مواد آمنة، تغطية 23 مدينة سعودية.",
-    "priceRange": "$$",
-    "currenciesAccepted": "SAR",
-    "areaServed": [
-      {"@type": "Country", "name": "المملكة العربية السعودية"},
-      {"@type": "City", "name": "الرياض"},
-      {"@type": "City", "name": "جدة"},
-      {"@type": "City", "name": "الدمام"},
-      {"@type": "City", "name": "مكة المكرمة"},
-      {"@type": "City", "name": "المدينة المنورة"}
-    ],
-    "serviceType": ["مكافحة حشرات", "رش مبيدات", "مكافحة صراصير", "مكافحة نمل أبيض", "مكافحة بق الفراش", "مكافحة فئران", "طارد حمام", "رش وقائي"],
-    "telephone": "+966555435986",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+966555435986",
-      "contactType": "customer service",
-      "availableLanguage": "Arabic",
-      "contactOption": "TollFree"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
-      "opens": "08:00",
-      "closes": "22:00"
-    },
-    "knowsAbout": ["مكافحة حشرات", "رش مبيدات", "مكافحة صراصير", "مكافحة نمل أبيض", "مكافحة بق الفراش", "مكافحة فئران", "طارد حمام", "مكافحة بعوض", "رش ما قبل البناء"]
+    "@graph": [
+      {
+        "@type": "PestControlBusiness",
+        "@id": "https://mubeed.com/#business",
+        "name": "مبيد",
+        "alternateName": "Mubeed",
+        "url": "https://mubeed.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mubeed.com/assets/images/og-mubeed.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "https://mubeed.com/assets/images/og-mubeed.png",
+        "description": "شركة مكافحة حشرات ورش مبيدات معتمدة في المملكة العربية السعودية. فنيون محترفون، مواد آمنة معتمدة من وزارة البيئة، تغطية 23 مدينة سعودية.",
+        "priceRange": "$$",
+        "currenciesAccepted": "SAR",
+        "telephone": "+966555435986",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع الملك فهد",
+          "addressLocality": "الرياض",
+          "postalCode": "12211",
+          "addressRegion": "منطقة الرياض",
+          "addressCountry": "SA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 24.7136,
+          "longitude": 46.6753
+        },
+        "areaServed": [
+          {"@type": "Country", "name": "Saudi Arabia"},
+          {"@type": "City", "name": "الرياض"},
+          {"@type": "City", "name": "جدة"},
+          {"@type": "City", "name": "الدمام"},
+          {"@type": "City", "name": "مكة المكرمة"},
+          {"@type": "City", "name": "المدينة المنورة"},
+          {"@type": "City", "name": "الطائف"},
+          {"@type": "City", "name": "الخبر"},
+          {"@type": "City", "name": "الأحساء"},
+          {"@type": "City", "name": "الجبيل"},
+          {"@type": "City", "name": "تبوك"}
+        ],
+        "serviceType": ["مكافحة حشرات", "رش مبيدات", "مكافحة صراصير", "مكافحة نمل أبيض", "مكافحة بق الفراش", "مكافحة فئران", "طارد حمام", "رش وقائي", "رش قبل البناء", "عقود سنوية"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+966555435986",
+          "contactType": "customer service",
+          "availableLanguage": {"@type": "Language", "name": "Arabic"},
+          "contactOption": "TollFree"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "08:00",
+            "closes": "22:00"
+          }
+        ],
+        "sameAs": [
+          "https://wa.me/966555435986"
+        ],
+        "knowsAbout": ["مكافحة حشرات", "رش مبيدات", "مكافحة صراصير", "مكافحة نمل أبيض", "مكافحة بق الفراش", "مكافحة فئران", "طارد حمام", "مكافحة بعوض", "رش ما قبل البناء"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mubeed.com/#website",
+        "url": "https://mubeed.com",
+        "name": "مبيد",
+        "description": "شركة مكافحة حشرات ورش مبيدات معتمدة في المملكة العربية السعودية",
+        "inLanguage": "ar-SA",
+        "publisher": {"@id": "https://mubeed.com/#business"}
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mubeed.com/#webpage",
+        "url": "https://mubeed.com/",
+        "name": "مبيد — مكافحة حشرات ورش مبيدات في جميع مدن المملكة",
+        "description": "شركة مكافحة حشرات ورش مبيدات معتمدة في السعودية. فنيون محترفون، مواد آمنة، تغطية واسعة.",
+        "isPartOf": {"@id": "https://mubeed.com/#website"},
+        "about": {"@id": "https://mubeed.com/#business"},
+        "inLanguage": "ar-SA",
+        "breadcrumb": {"@id": "https://mubeed.com/#breadcrumb"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mubeed.com/#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://mubeed.com/"}
+        ]
+      }
+    ]
   }
   </script>
 
