@@ -29,7 +29,7 @@
 
 **Brand Name:** مبيد (Mubeed — "Pesticide / Exterminator")
 **Domain:** mubeed.com
-**WhatsApp Number:** +966555435986 (shared with all sites)
+**WhatsApp Number:** +966530066891 (shared with all sites)
 **GA4 Measurement ID:** G-FKGZLWWVJP
 
 ### Design System
@@ -350,7 +350,7 @@
 
 ## WhatsApp Integration
 
-**Number:** +966555435986
+**Number:** +966530066891
 
 **Pre-filled Messages:**
 - General: "السلام عليكم، أحتاج مكافحة حشرات"
@@ -480,7 +480,7 @@ firebase deploy
 "مبيد" / "مبي<span>د</span>" in all HTML files.
 
 ### Changing WhatsApp Number
-`966555435986` in all wa.me links, footer, schema, llms.txt.
+`966530066891` in all wa.me links, footer, schema, llms.txt.
 
 ### Changing GA4 ID
 `G-FKGZLWWVJP` in every HTML file head.

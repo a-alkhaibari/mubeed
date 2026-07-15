@@ -9,9 +9,9 @@
   /* ----- CONFIGURATION (edit these values) ----- */
   // <!-- EDITABLE: Update these contact details -->
   const CONFIG = {
-    whatsappNumber: '966555435986',  // Without + sign
-    phoneNumber: '+966555435986',
-    phonDisplay: '0555435986',
+    whatsappNumber: '966530066891',  // Without + sign
+    phoneNumber: '+966530066891',
+    phonDisplay: '0530066891',
   };
 
   /* ----- STICKY HEADER ----- */
